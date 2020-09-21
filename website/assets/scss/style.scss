@@ -1,0 +1,49 @@
+@import 'colors';
+@import 'mixin';
+@import 'reset';
+@import 'specialClasses';
+
+html {
+    header {
+        .search {
+            width: 125px;
+
+            button {
+                color: $myLightGray;
+                right: 5px;
+            }
+
+            button:focus {
+                box-shadow: none;
+            }
+        }
+
+    }
+
+    main {
+        
+        section#first {
+            .first {
+                background-image: url(../img/battlebots.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+                position: relative;
+
+                .text {
+                    position: absolute;
+                    left: 50%;
+                    bottom: 100px;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+
+        section#second {
+            .card {
+                width: 20rem;
+            }
+        }
+    }
+
+}
